@@ -2,6 +2,11 @@
 #define MEMORY_H
 
 #include <stdlib.h>
+#include <sys/mman.h>
+#include <string.h>
+#include <stdint.h>
+#include <stdbool.h>
+
 
 void *psmalloc(size_t size);
 void psfree(void *ptr);
